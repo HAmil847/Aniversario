@@ -159,4 +159,12 @@ body {
   display: grid;
 }
 
+#touch {
+  font-size: 2em;
+}
+
+.main-text {
+  font-size: 2.5em;
+}
+
 /*# sourceMappingURL=index.3a01df49.css.map */
