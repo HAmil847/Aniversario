@@ -1,0 +1,162 @@
+body {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#container {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#happy-container {
+  z-index: 100;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 4px #00000080;
+  font-family: Dancing Script, cursive;
+}
+
+h3 {
+  color: #fff;
+  text-align: center;
+  text-shadow: 1px 1px 2px #00000080;
+  padding-bottom: 25vh;
+  font-family: Josefin Slab, serif;
+}
+
+body {
+  background-color: #000;
+}
+
+.main-heart {
+  margin-top: -200px;
+  margin-left: -200px;
+  top: 50%;
+  left: 50%;
+  fill: red !important;
+  z-index: 2 !important;
+  width: 400px !important;
+  height: 400px !important;
+}
+
+#my-heart {
+  font-size: 26px;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: .8;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .9;
+  }
+
+  75% {
+    opacity: .95;
+  }
+
+  100% {
+    opacity: .85;
+  }
+}
+
+.fire-effect {
+  z-index: -1;
+  background: radial-gradient(circle, #fff68fe6 10%, #f600 70%);
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  animation: 2s infinite flicker;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.fire-glow {
+  z-index: -1;
+  opacity: .7;
+  background: radial-gradient(circle, #fc3c 40%, #fc30 70%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fire-sparks {
+  z-index: -1;
+  background-image: radial-gradient(circle, #ffe6cccc 5%, #fc30 60%);
+  width: 100%;
+  height: 100%;
+  animation: 2s infinite flicker;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#heart {
+  z-index: -1;
+  background: none;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+
+#heart path {
+  stroke: none;
+  animation: 5s infinite random;
+}
+
+@keyframes random {
+  15% {
+    fill: red;
+  }
+
+  30% {
+    fill: #ff3fb9;
+  }
+
+  45% {
+    fill: #e14dff;
+  }
+
+  60% {
+    fill: #4cdbff;
+  }
+
+  75% {
+    fill: #fd0c2c;
+  }
+}
+
+#overlay {
+  place-content: center;
+  display: grid;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
